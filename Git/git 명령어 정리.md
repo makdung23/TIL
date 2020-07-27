@@ -20,6 +20,10 @@
 
   : 로컬에서의 수정사항들을 staging area(임시저장소)에 옮겨 놓음 
 
+- git add *helloworld.py*
+
+  : 객체 하나만 add할 때
+
 - git commit -m "커밋 설명 내용"
 
   : 지금까지 add되어 staging area에 머물러 있는 내용을 commit함. 일종의 labeling  
@@ -35,3 +39,17 @@
 * git status 
 
   : modified 되었지만 add 되지 않은 사항들 확ㅇ인 가능
+
+
+
+* git remote -v
+
+  : 연결된 원격 저장소 확인하기
+
+* git remote rm
+
+  : 원격 연결 끊기
+
+* git log --oneline
+
+  : commit 로그 좀 더 간단하게 한 눈에 보기
