@@ -32,14 +32,6 @@
 
   :  지금까지 commit 내용들을 github repository(origin) 추가
 
-* git log
-
-  : 지금까지 쌓아온 commit의 목록 확인
-
-* git status 
-
-  : modified 되었지만 add 되지 않은 사항들 확ㅇ인 가능
-
 
 
 * git remote -v
@@ -53,3 +45,41 @@
 * git log --oneline
 
   : commit 로그 좀 더 간단하게 한 눈에 보기
+
+
+
+### Add / Commit 지우기
+
+* add 취소
+
+  git restore(버전에 따라 reset) --staged <add된 파일명>
+
+* commit 수정 (**웬만하면 안하는게 !! **)
+
+  * commit 메세지 수정
+
+    git commit --amend -> 나오는 창에서 수정
+
+  * 마지막 commit에 추가적인 파일 함께 commit
+
+    git commit --amend 
+
+    : 마지막 커밋 메세지 수정하며 지금 add 된 파일까지 함께 commit
+
+
+
+###  기록 확인하기
+
+* git log
+
+  : 지금까지 쌓아온 commit의 목록 확인
+
+* git status 
+
+  : modified 되었지만 add 되지 않은 사항들 확ㅇ인 가능
+
+* git diff
+
+  : 어떤 파일에서 무엇이 삭제/추가되었는지 확인 가능
+
+    **워킹스테이지**에 있는 수정사항들(add 하기 전)을 확인하는 것
